@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADFC23DF2912515100D16AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23DE2912515100D16AB4 /* AppDelegate.swift */; };
+		ADFC23E12912515100D16AB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23E02912515100D16AB4 /* SceneDelegate.swift */; };
+		ADFC23E32912515100D16AB4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23E22912515100D16AB4 /* BaseViewController.swift */; };
+		ADFC23E62912515100D16AB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFC23E42912515100D16AB4 /* Main.storyboard */; };
+		ADFC23E82912515200D16AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFC23E72912515200D16AB4 /* Assets.xcassets */; };
+		ADFC23EB2912515200D16AB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFC23E92912515200D16AB4 /* LaunchScreen.storyboard */; };
+		ADFC23F5291251F200D16AB4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23F4291251F200D16AB4 /* BaseView.swift */; };
+		ADFC23FD2912537400D16AB4 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23FC2912537400D16AB4 /* SignupViewController.swift */; };
+		ADFC23FF291253B400D16AB4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23FE291253B400D16AB4 /* LoginViewController.swift */; };
+		ADFC2401291253D700D16AB4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC2400291253D700D16AB4 /* ProfileViewController.swift */; };
+		ADFC24032912540000D16AB4 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC24022912540000D16AB4 /* SignupView.swift */; };
+		ADFC24052912581200D16AB4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC24042912581200D16AB4 /* LoginView.swift */; };
+		ADFC24072912584700D16AB4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC24062912584700D16AB4 /* Profile.swift */; };
+		ADFC240A29125B5F00D16AB4 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC240929125B5F00D16AB4 /* View+Extension.swift */; };
+		ADFC240D29125BBB00D16AB4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = ADFC240C29125BBB00D16AB4 /* RxCocoa */; };
+		ADFC240F29125BBB00D16AB4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ADFC240E29125BBB00D16AB4 /* RxSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ADFC23DB2912515100D16AB4 /* SeSACServerNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACServerNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFC23DE2912515100D16AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADFC23E02912515100D16AB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ADFC23E22912515100D16AB4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		ADFC23E52912515100D16AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADFC23E72912515200D16AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADFC23EA2912515200D16AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADFC23EC2912515200D16AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFC23F4291251F200D16AB4 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		ADFC23FC2912537400D16AB4 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		ADFC23FE291253B400D16AB4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ADFC2400291253D700D16AB4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ADFC24022912540000D16AB4 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		ADFC24042912581200D16AB4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ADFC24062912584700D16AB4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		ADFC240929125B5F00D16AB4 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADFC23D82912515100D16AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFC240F29125BBB00D16AB4 /* RxSwift in Frameworks */,
+				ADFC240D29125BBB00D16AB4 /* RxCocoa in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADFC23D22912515100D16AB4 = {
+			isa = PBXGroup;
+			children = (
+				ADFC23DD2912515100D16AB4 /* SeSACServerNetworking */,
+				ADFC23DC2912515100D16AB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADFC23DC2912515100D16AB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC23DB2912515100D16AB4 /* SeSACServerNetworking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADFC23DD2912515100D16AB4 /* SeSACServerNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC23DE2912515100D16AB4 /* AppDelegate.swift */,
+				ADFC23E02912515100D16AB4 /* SceneDelegate.swift */,
+				ADFC23FA2912533E00D16AB4 /* Constant */,
+				ADFC23F22912517000D16AB4 /* Utilities */,
+				ADFC23F62912522A00D16AB4 /* Presents */,
+				ADFC23E42912515100D16AB4 /* Main.storyboard */,
+				ADFC23E72912515200D16AB4 /* Assets.xcassets */,
+				ADFC23E92912515200D16AB4 /* LaunchScreen.storyboard */,
+				ADFC23EC2912515200D16AB4 /* Info.plist */,
+			);
+			path = SeSACServerNetworking;
+			sourceTree = "<group>";
+		};
+		ADFC23F22912517000D16AB4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC23F32912519400D16AB4 /* BaseComponents */,
+				ADFC23FB2912534C00D16AB4 /* Networking */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		ADFC23F32912519400D16AB4 /* BaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC23E22912515100D16AB4 /* BaseViewController.swift */,
+				ADFC23F4291251F200D16AB4 /* BaseView.swift */,
+			);
+			path = BaseComponents;
+			sourceTree = "<group>";
+		};
+		ADFC23F62912522A00D16AB4 /* Presents */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC23F72912530200D16AB4 /* Signup */,
+				ADFC23F82912531100D16AB4 /* Login */,
+				ADFC23F92912531D00D16AB4 /* Profile */,
+			);
+			path = Presents;
+			sourceTree = "<group>";
+		};
+		ADFC23F72912530200D16AB4 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC23FC2912537400D16AB4 /* SignupViewController.swift */,
+				ADFC24022912540000D16AB4 /* SignupView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		ADFC23F82912531100D16AB4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC23FE291253B400D16AB4 /* LoginViewController.swift */,
+				ADFC24042912581200D16AB4 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ADFC23F92912531D00D16AB4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC2400291253D700D16AB4 /* ProfileViewController.swift */,
+				ADFC24062912584700D16AB4 /* Profile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		ADFC23FA2912533E00D16AB4 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC240829125B4900D16AB4 /* Extensions */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		ADFC23FB2912534C00D16AB4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		ADFC240829125B4900D16AB4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC240929125B5F00D16AB4 /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADFC23DA2912515100D16AB4 /* SeSACServerNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFC23EF2912515200D16AB4 /* Build configuration list for PBXNativeTarget "SeSACServerNetworking" */;
+			buildPhases = (
+				ADFC23D72912515100D16AB4 /* Sources */,
+				ADFC23D82912515100D16AB4 /* Frameworks */,
+				ADFC23D92912515100D16AB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeSACServerNetworking;
+			packageProductDependencies = (
+				ADFC240C29125BBB00D16AB4 /* RxCocoa */,
+				ADFC240E29125BBB00D16AB4 /* RxSwift */,
+			);
+			productName = SeSACServerNetworking;
+			productReference = ADFC23DB2912515100D16AB4 /* SeSACServerNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADFC23D32912515100D16AB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					ADFC23DA2912515100D16AB4 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = ADFC23D62912515100D16AB4 /* Build configuration list for PBXProject "SeSACServerNetworking" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADFC23D22912515100D16AB4;
+			packageReferences = (
+				ADFC240B29125BBB00D16AB4 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = ADFC23DC2912515100D16AB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADFC23DA2912515100D16AB4 /* SeSACServerNetworking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADFC23D92912515100D16AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFC23EB2912515200D16AB4 /* LaunchScreen.storyboard in Resources */,
+				ADFC23E82912515200D16AB4 /* Assets.xcassets in Resources */,
+				ADFC23E62912515100D16AB4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADFC23D72912515100D16AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFC23FF291253B400D16AB4 /* LoginViewController.swift in Sources */,
+				ADFC24072912584700D16AB4 /* Profile.swift in Sources */,
+				ADFC23E32912515100D16AB4 /* BaseViewController.swift in Sources */,
+				ADFC23DF2912515100D16AB4 /* AppDelegate.swift in Sources */,
+				ADFC24052912581200D16AB4 /* LoginView.swift in Sources */,
+				ADFC23FD2912537400D16AB4 /* SignupViewController.swift in Sources */,
+				ADFC24032912540000D16AB4 /* SignupView.swift in Sources */,
+				ADFC240A29125B5F00D16AB4 /* View+Extension.swift in Sources */,
+				ADFC2401291253D700D16AB4 /* ProfileViewController.swift in Sources */,
+				ADFC23E12912515100D16AB4 /* SceneDelegate.swift in Sources */,
+				ADFC23F5291251F200D16AB4 /* BaseView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ADFC23E42912515100D16AB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADFC23E52912515100D16AB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADFC23E92912515200D16AB4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADFC23EA2912515200D16AB4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADFC23ED2912515200D16AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADFC23EE2912515200D16AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADFC23F02912515200D16AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DLA597KS3F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SeSACServerNetworking/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhee.SeSACServerNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ADFC23F12912515200D16AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DLA597KS3F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SeSACServerNetworking/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhee.SeSACServerNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADFC23D62912515100D16AB4 /* Build configuration list for PBXProject "SeSACServerNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFC23ED2912515200D16AB4 /* Debug */,
+				ADFC23EE2912515200D16AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFC23EF2912515200D16AB4 /* Build configuration list for PBXNativeTarget "SeSACServerNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFC23F02912515200D16AB4 /* Debug */,
+				ADFC23F12912515200D16AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADFC240B29125BBB00D16AB4 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADFC240C29125BBB00D16AB4 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADFC240B29125BBB00D16AB4 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		ADFC240E29125BBB00D16AB4 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADFC240B29125BBB00D16AB4 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ADFC23D32912515100D16AB4 /* Project object */;
+}
