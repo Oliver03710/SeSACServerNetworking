@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD2F7AEE2912D30100017F3F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F7AED2912D30100017F3F /* CustomTextField.swift */; };
+		AD2F7AF22912D98F00017F3F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AD2F7AF12912D98F00017F3F /* SnapKit */; };
+		AD2F7AF42912E06100017F3F /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F7AF32912E06100017F3F /* SignupViewModel.swift */; };
+		AD2F7AF72912E0D200017F3F /* CommonViewModel+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F7AF62912E0D200017F3F /* CommonViewModel+Protocol.swift */; };
 		ADFC23DF2912515100D16AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23DE2912515100D16AB4 /* AppDelegate.swift */; };
 		ADFC23E12912515100D16AB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23E02912515100D16AB4 /* SceneDelegate.swift */; };
 		ADFC23E32912515100D16AB4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23E22912515100D16AB4 /* BaseViewController.swift */; };
@@ -17,10 +21,8 @@
 		ADFC23FD2912537400D16AB4 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23FC2912537400D16AB4 /* SignupViewController.swift */; };
 		ADFC23FF291253B400D16AB4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23FE291253B400D16AB4 /* LoginViewController.swift */; };
 		ADFC2401291253D700D16AB4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC2400291253D700D16AB4 /* ProfileViewController.swift */; };
-		ADFC24032912540000D16AB4 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC24022912540000D16AB4 /* SignupView.swift */; };
 		ADFC24052912581200D16AB4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC24042912581200D16AB4 /* LoginView.swift */; };
 		ADFC24072912584700D16AB4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC24062912584700D16AB4 /* ProfileView.swift */; };
-		ADFC240A29125B5F00D16AB4 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC240929125B5F00D16AB4 /* View+Extension.swift */; };
 		ADFC240D29125BBB00D16AB4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = ADFC240C29125BBB00D16AB4 /* RxCocoa */; };
 		ADFC240F29125BBB00D16AB4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ADFC240E29125BBB00D16AB4 /* RxSwift */; };
 		ADFC241429125D0F00D16AB4 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC241329125D0F00D16AB4 /* Endpoints.swift */; };
@@ -31,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD2F7AED2912D30100017F3F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		AD2F7AF32912E06100017F3F /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		AD2F7AF62912E0D200017F3F /* CommonViewModel+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommonViewModel+Protocol.swift"; sourceTree = "<group>"; };
 		ADFC23DB2912515100D16AB4 /* SeSACServerNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACServerNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFC23DE2912515100D16AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADFC23E02912515100D16AB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +48,8 @@
 		ADFC23FC2912537400D16AB4 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		ADFC23FE291253B400D16AB4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ADFC2400291253D700D16AB4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		ADFC24022912540000D16AB4 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		ADFC24042912581200D16AB4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		ADFC24062912584700D16AB4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		ADFC240929125B5F00D16AB4 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		ADFC241329125D0F00D16AB4 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		ADFC2415291261EE00D16AB4 /* NetworkingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingModel.swift; sourceTree = "<group>"; };
 		ADFC2417291263A900D16AB4 /* SeSACManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACManager.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADFC241D29126A5500D16AB4 /* Alamofire in Frameworks */,
+				AD2F7AF22912D98F00017F3F /* SnapKit in Frameworks */,
 				ADFC240F29125BBB00D16AB4 /* RxSwift in Frameworks */,
 				ADFC240D29125BBB00D16AB4 /* RxCocoa in Frameworks */,
 			);
@@ -67,6 +71,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD2F7AEF2912D30500017F3F /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				AD2F7AED2912D30100017F3F /* CustomTextField.swift */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		AD2F7AF52912E0BA00017F3F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AD2F7AF62912E0D200017F3F /* CommonViewModel+Protocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		ADFC23D22912515100D16AB4 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +124,7 @@
 			children = (
 				ADFC241E29126B5700D16AB4 /* Helpers */,
 				ADFC23F32912519400D16AB4 /* BaseComponents */,
+				AD2F7AEF2912D30500017F3F /* CustomComponents */,
 				ADFC23FB2912534C00D16AB4 /* Networking */,
 			);
 			path = Utilities;
@@ -131,8 +152,8 @@
 		ADFC23F72912530200D16AB4 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				AD2F7AF32912E06100017F3F /* SignupViewModel.swift */,
 				ADFC23FC2912537400D16AB4 /* SignupViewController.swift */,
-				ADFC24022912540000D16AB4 /* SignupView.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -158,8 +179,7 @@
 		ADFC23FA2912533E00D16AB4 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
-				ADFC241229125CFA00D16AB4 /* NetworkAPI */,
-				ADFC240829125B4900D16AB4 /* Extensions */,
+				AD2F7AF52912E0BA00017F3F /* Protocols */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -172,21 +192,6 @@
 				ADFC2417291263A900D16AB4 /* SeSACManager.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		ADFC240829125B4900D16AB4 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				ADFC240929125B5F00D16AB4 /* View+Extension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		ADFC241229125CFA00D16AB4 /* NetworkAPI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetworkAPI;
 			sourceTree = "<group>";
 		};
 		ADFC241E29126B5700D16AB4 /* Helpers */ = {
@@ -217,6 +222,7 @@
 				ADFC240C29125BBB00D16AB4 /* RxCocoa */,
 				ADFC240E29125BBB00D16AB4 /* RxSwift */,
 				ADFC241C29126A5500D16AB4 /* Alamofire */,
+				AD2F7AF12912D98F00017F3F /* SnapKit */,
 			);
 			productName = SeSACServerNetworking;
 			productReference = ADFC23DB2912515100D16AB4 /* SeSACServerNetworking.app */;
@@ -249,6 +255,7 @@
 			packageReferences = (
 				ADFC240B29125BBB00D16AB4 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				ADFC241B29126A5500D16AB4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AD2F7AF02912D98F00017F3F /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = ADFC23DC2912515100D16AB4 /* Products */;
 			projectDirPath = "";
@@ -277,17 +284,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2F7AF42912E06100017F3F /* SignupViewModel.swift in Sources */,
 				ADFC23FF291253B400D16AB4 /* LoginViewController.swift in Sources */,
 				ADFC24072912584700D16AB4 /* ProfileView.swift in Sources */,
 				ADFC23E32912515100D16AB4 /* BaseViewController.swift in Sources */,
 				ADFC23DF2912515100D16AB4 /* AppDelegate.swift in Sources */,
+				AD2F7AEE2912D30100017F3F /* CustomTextField.swift in Sources */,
 				ADFC24052912581200D16AB4 /* LoginView.swift in Sources */,
 				ADFC2418291263A900D16AB4 /* SeSACManager.swift in Sources */,
 				ADFC23FD2912537400D16AB4 /* SignupViewController.swift in Sources */,
-				ADFC24032912540000D16AB4 /* SignupView.swift in Sources */,
 				ADFC2416291261EE00D16AB4 /* NetworkingModel.swift in Sources */,
-				ADFC240A29125B5F00D16AB4 /* View+Extension.swift in Sources */,
 				ADFC242029126B6700D16AB4 /* UserDefaultsHelper.swift in Sources */,
+				AD2F7AF72912E0D200017F3F /* CommonViewModel+Protocol.swift in Sources */,
 				ADFC2401291253D700D16AB4 /* ProfileViewController.swift in Sources */,
 				ADFC23E12912515100D16AB4 /* SceneDelegate.swift in Sources */,
 				ADFC241429125D0F00D16AB4 /* Endpoints.swift in Sources */,
@@ -517,6 +525,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AD2F7AF02912D98F00017F3F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		ADFC240B29125BBB00D16AB4 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -536,6 +552,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AD2F7AF12912D98F00017F3F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD2F7AF02912D98F00017F3F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		ADFC240C29125BBB00D16AB4 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ADFC240B29125BBB00D16AB4 /* XCRemoteSwiftPackageReference "RxSwift" */;
