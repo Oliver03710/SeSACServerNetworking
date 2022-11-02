@@ -1,5 +1,5 @@
 //
-//  Profile.swift
+//  ProfileView.swift
 //  SeSACServerNetworking
 //
 //  Created by Junhee Yoon on 2022/11/02.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class Profile: BaseView {
+final class ProfileView: BaseView {
 
     // MARK: - Properties
     
