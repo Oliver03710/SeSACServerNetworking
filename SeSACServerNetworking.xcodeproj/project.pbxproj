@@ -19,10 +19,15 @@
 		ADFC2401291253D700D16AB4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC2400291253D700D16AB4 /* ProfileViewController.swift */; };
 		ADFC24032912540000D16AB4 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC24022912540000D16AB4 /* SignupView.swift */; };
 		ADFC24052912581200D16AB4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC24042912581200D16AB4 /* LoginView.swift */; };
-		ADFC24072912584700D16AB4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC24062912584700D16AB4 /* Profile.swift */; };
+		ADFC24072912584700D16AB4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC24062912584700D16AB4 /* ProfileView.swift */; };
 		ADFC240A29125B5F00D16AB4 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC240929125B5F00D16AB4 /* View+Extension.swift */; };
 		ADFC240D29125BBB00D16AB4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = ADFC240C29125BBB00D16AB4 /* RxCocoa */; };
 		ADFC240F29125BBB00D16AB4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ADFC240E29125BBB00D16AB4 /* RxSwift */; };
+		ADFC241429125D0F00D16AB4 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC241329125D0F00D16AB4 /* Endpoints.swift */; };
+		ADFC2416291261EE00D16AB4 /* NetworkingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC2415291261EE00D16AB4 /* NetworkingModel.swift */; };
+		ADFC2418291263A900D16AB4 /* SeSACManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC2417291263A900D16AB4 /* SeSACManager.swift */; };
+		ADFC241D29126A5500D16AB4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ADFC241C29126A5500D16AB4 /* Alamofire */; };
+		ADFC242029126B6700D16AB4 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC241F29126B6700D16AB4 /* UserDefaultsHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +45,12 @@
 		ADFC2400291253D700D16AB4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ADFC24022912540000D16AB4 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		ADFC24042912581200D16AB4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		ADFC24062912584700D16AB4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		ADFC24062912584700D16AB4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		ADFC240929125B5F00D16AB4 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		ADFC241329125D0F00D16AB4 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		ADFC2415291261EE00D16AB4 /* NetworkingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingModel.swift; sourceTree = "<group>"; };
+		ADFC2417291263A900D16AB4 /* SeSACManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACManager.swift; sourceTree = "<group>"; };
+		ADFC241F29126B6700D16AB4 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFC241D29126A5500D16AB4 /* Alamofire in Frameworks */,
 				ADFC240F29125BBB00D16AB4 /* RxSwift in Frameworks */,
 				ADFC240D29125BBB00D16AB4 /* RxCocoa in Frameworks */,
 			);
@@ -92,6 +102,7 @@
 		ADFC23F22912517000D16AB4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				ADFC241E29126B5700D16AB4 /* Helpers */,
 				ADFC23F32912519400D16AB4 /* BaseComponents */,
 				ADFC23FB2912534C00D16AB4 /* Networking */,
 			);
@@ -139,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				ADFC2400291253D700D16AB4 /* ProfileViewController.swift */,
-				ADFC24062912584700D16AB4 /* Profile.swift */,
+				ADFC24062912584700D16AB4 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -147,6 +158,7 @@
 		ADFC23FA2912533E00D16AB4 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				ADFC241229125CFA00D16AB4 /* NetworkAPI */,
 				ADFC240829125B4900D16AB4 /* Extensions */,
 			);
 			path = Constant;
@@ -155,6 +167,9 @@
 		ADFC23FB2912534C00D16AB4 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				ADFC2415291261EE00D16AB4 /* NetworkingModel.swift */,
+				ADFC241329125D0F00D16AB4 /* Endpoints.swift */,
+				ADFC2417291263A900D16AB4 /* SeSACManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -165,6 +180,21 @@
 				ADFC240929125B5F00D16AB4 /* View+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ADFC241229125CFA00D16AB4 /* NetworkAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkAPI;
+			sourceTree = "<group>";
+		};
+		ADFC241E29126B5700D16AB4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC241F29126B6700D16AB4 /* UserDefaultsHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +216,7 @@
 			packageProductDependencies = (
 				ADFC240C29125BBB00D16AB4 /* RxCocoa */,
 				ADFC240E29125BBB00D16AB4 /* RxSwift */,
+				ADFC241C29126A5500D16AB4 /* Alamofire */,
 			);
 			productName = SeSACServerNetworking;
 			productReference = ADFC23DB2912515100D16AB4 /* SeSACServerNetworking.app */;
@@ -217,6 +248,7 @@
 			mainGroup = ADFC23D22912515100D16AB4;
 			packageReferences = (
 				ADFC240B29125BBB00D16AB4 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				ADFC241B29126A5500D16AB4 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = ADFC23DC2912515100D16AB4 /* Products */;
 			projectDirPath = "";
@@ -246,15 +278,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADFC23FF291253B400D16AB4 /* LoginViewController.swift in Sources */,
-				ADFC24072912584700D16AB4 /* Profile.swift in Sources */,
+				ADFC24072912584700D16AB4 /* ProfileView.swift in Sources */,
 				ADFC23E32912515100D16AB4 /* BaseViewController.swift in Sources */,
 				ADFC23DF2912515100D16AB4 /* AppDelegate.swift in Sources */,
 				ADFC24052912581200D16AB4 /* LoginView.swift in Sources */,
+				ADFC2418291263A900D16AB4 /* SeSACManager.swift in Sources */,
 				ADFC23FD2912537400D16AB4 /* SignupViewController.swift in Sources */,
 				ADFC24032912540000D16AB4 /* SignupView.swift in Sources */,
+				ADFC2416291261EE00D16AB4 /* NetworkingModel.swift in Sources */,
 				ADFC240A29125B5F00D16AB4 /* View+Extension.swift in Sources */,
+				ADFC242029126B6700D16AB4 /* UserDefaultsHelper.swift in Sources */,
 				ADFC2401291253D700D16AB4 /* ProfileViewController.swift in Sources */,
 				ADFC23E12912515100D16AB4 /* SceneDelegate.swift in Sources */,
+				ADFC241429125D0F00D16AB4 /* Endpoints.swift in Sources */,
 				ADFC23F5291251F200D16AB4 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +525,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		ADFC241B29126A5500D16AB4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -501,6 +545,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ADFC240B29125BBB00D16AB4 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		ADFC241C29126A5500D16AB4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADFC241B29126A5500D16AB4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
