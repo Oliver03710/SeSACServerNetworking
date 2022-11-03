@@ -28,11 +28,11 @@ struct UserDefaultsWrapper<T> {
 
 struct UserDefaultsManager {
     
-    @UserDefaultsWrapper(key: "token", defaultValue: "")
-    static var token: String
+    @UserDefaultsWrapper(key: "token", defaultValue: nil)
+    static var token: String?
     
-    @UserDefaultsWrapper(key: "loginTitle", defaultValue: "회원가입")
-    static var loginTitle: String
+    @UserDefaultsWrapper(key: "signupTitle", defaultValue: "회원가입")
+    static var signupTitle: String
     
     @UserDefaultsWrapper(key: "nameTextField", defaultValue: "이름을 입력하세요.")
     static var nameTextField: String
@@ -46,7 +46,7 @@ struct UserDefaultsManager {
     @UserDefaultsWrapper(key: "Okay", defaultValue: "OK")
     static var okay: String
     
-    @UserDefaultsWrapper(key: "key", defaultValue: "Bearer \(Self.token)")
+    @UserDefaultsWrapper(key: "key", defaultValue: "Bearer \(token ?? "")")
     static var key: String
     
     @UserDefaultsWrapper(key: "contentType", defaultValue: "Content-Type")
@@ -78,6 +78,21 @@ struct UserDefaultsManager {
     
     @UserDefaultsWrapper(key: "password", defaultValue: "password")
     static var password: String
+    
+    @UserDefaultsWrapper(key: "loginTitle", defaultValue: "로그인")
+    static var loginTitle: String
+    
+    @UserDefaultsWrapper(key: "invalidAutho", defaultValue: "토큰이 만료되었습니다. 다시 로그인 해주세요.")
+    static var invalidAutho: String
+    
+    @UserDefaultsWrapper(key: "emailTaken", defaultValue: "이미 가입된 회원입니다. 로그인 해주세요.")
+    static var emailTaken: String
+    
+    @UserDefaultsWrapper(key: "interalError", defaultValue: "이메일 또는 비밀번호를 다시 확인해주세요.")
+    static var interalError: String
+    
+    @UserDefaultsWrapper(key: "emptyParameters", defaultValue: "요청이 잘못되었습니다.")
+    static var emptyParameters: String
     
     
     static func removeAll() {
