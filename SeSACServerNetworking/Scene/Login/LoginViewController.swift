@@ -18,25 +18,25 @@ final class LoginViewController: BaseViewController {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 32)
-        label.text = "로그인"
+        label.text = UserDefaultsManager.loginTitle
         label.textAlignment = .center
         return label
     }()
     
     private let emailTextField: CustomTextField = {
-        let tf = CustomTextField(placeholder: "이메일주소를 입력하세요.", fontSize: 15)
+        let tf = CustomTextField(placeholder: UserDefaultsManager.emailTextField, fontSize: 15)
         return tf
     }()
     
     private let passwordTextField: CustomTextField = {
-        let tf = CustomTextField(placeholder: "비밀번호를 입력하세요.", fontSize: 15)
+        let tf = CustomTextField(placeholder: UserDefaultsManager.passwordTextField, fontSize: 15)
         tf.isSecureTextEntry = true
         return tf
     }()
     
     private let loginButton: UIButton = {
         let btn = UIButton()
-        btn.setTitle("로그인", for: .normal)
+        btn.setTitle(UserDefaultsManager.loginTitle, for: .normal)
         btn.titleLabel?.font = .boldSystemFont(ofSize: 20)
         btn.backgroundColor = .darkGray
         btn.clipsToBounds = true
@@ -107,20 +107,20 @@ final class LoginViewController: BaseViewController {
             }
             .disposed(by: disposeBag)
         
-        output.tap
-            .withUnretained(self)
-            .bind { (vc, _) in
-                SeSACManager.shared.request(router: vc.viewModel.api) { [weak self] str in
-                    if str.uppercased() == "OK" {
-                        let vc = LoginViewController()
-                        vc.modalPresentationStyle = .overFullScreen
-                        self?.present(vc, animated: true)
-                    }
-                } failure: { error in
-                    print(error)
-                }
-            }
-            .disposed(by: disposeBag)
+//        output.tap
+//            .withUnretained(self)
+//            .bind { (vc, _) in
+//                SeSACManager.shared.request(router: vc.viewModel.api) { [weak self] str in
+//                    if str.uppercased() == "OK" {
+//                        let vc = LoginViewController()
+//                        vc.modalPresentationStyle = .overFullScreen
+//                        self?.present(vc, animated: true)
+//                    }
+//                } failure: { error in
+//                    print(error)
+//                }
+//            }
+//            .disposed(by: disposeBag)
     }
 
 }

@@ -9,6 +9,30 @@ import Foundation
 
 import Alamofire
 
+enum SeSACError: Int, Error {
+    case invalidAuthorization = 401
+    case emailTaken = 406
+    case internalError = 500
+    case emptyParameters = 501
+}
+
+extension SeSACError: LocalizedError {
+    
+    var errorDescription: String? {
+        switch self {
+        case .invalidAuthorization:
+            return UserDefaultsManager.invalidAutho
+        case .emailTaken:
+            return UserDefaultsManager.emailTaken
+        case .internalError:
+            return UserDefaultsManager.interalError
+        case .emptyParameters:
+            return UserDefaultsManager.emptyParameters
+        }
+    }
+}
+
+
 enum SeSACAPI {
     case signup(userName: String, email: String, password: String)
     case login(email: String, password: String)
@@ -25,7 +49,7 @@ extension SeSACAPI: URLRequestConvertible {
     var url: URL {
         switch self {
         default:
-            guard let url = URL(string: "http://api.memolease.com/api/v1/users/") else { return URL(fileURLWithPath: "") }
+            guard let url = URL(string: UserDefaultsManager.baseURLPath) else { return URL(fileURLWithPath: "") }
             return url
         }
     }
@@ -33,11 +57,11 @@ extension SeSACAPI: URLRequestConvertible {
     var path: String {
         switch self {
         case .signup:
-            return "signup"
+            return UserDefaultsManager.signupPath
         case .login:
-            return "login"
+            return UserDefaultsManager.loginPath
         case .profile:
-            return "me"
+            return UserDefaultsManager.profilePath
         }
     }
     
@@ -53,11 +77,11 @@ extension SeSACAPI: URLRequestConvertible {
     var headers: HTTPHeaders {
         switch self {
         case .signup, .login:
-            return ["Content-Type": "application/x-www-form-urlencoded"]
+            return [UserDefaultsManager.contentType: UserDefaultsManager.contentValue]
         case .profile:
             return [
-                "Content-Type": "application/x-www-form-urlencoded",
-                "Authorization": "Bearer \(UserDefaults.standard.string(forKey: "token") ?? "")"
+                UserDefaultsManager.contentType: UserDefaultsManager.contentValue,
+                UserDefaultsManager.autho: UserDefaultsManager.key
             ]
         }
     }
@@ -66,14 +90,14 @@ extension SeSACAPI: URLRequestConvertible {
         switch self {
         case .signup(let userName, let email, let password):
             return [
-                "userName": userName,
-                "email": email,
-                "password": password
+                UserDefaultsManager.userName: userName,
+                UserDefaultsManager.email: email,
+                UserDefaultsManager.password: password
             ]
         case .login(let email, let password):
             return [
-                "email": email,
-                "password": password
+                UserDefaultsManager.email: email,
+                UserDefaultsManager.password: password
             ]
         default: return nil
         }
