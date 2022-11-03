@@ -33,7 +33,9 @@ final class SeSACManager {
                 switch response.result {
                 case .success(let value):
                     single(.success(value))
-                case .failure(let error):
+                case .failure:
+                    guard let statusCode = response.response?.statusCode else { return }
+                    guard let error = SeSACError(rawValue: statusCode) else { return }
                     single(.failure(error))
                 }
                 
@@ -49,25 +51,15 @@ final class SeSACManager {
                 switch response.result {
                 case .success(let data):
                     single(.success(data))
-                case .failure(let error):
+                case .failure:
+                    guard let statusCode = response.response?.statusCode else { return }
+                    guard let error = SeSACError(rawValue: statusCode) else { return }
                     single(.failure(error))
                 }
             }
             return Disposables.create()
         }
     }
-
-    
-    func request(router: SeSACAPI, success: @escaping (String) -> Void, failure: @escaping (Error) -> Void) {
-        AF.request(router).validate(statusCode: 200..<400).responseString() { response in
-                switch response.result {
-                case .success(let data):
-                    success(data)
-                case .failure(let err):
-                    failure(err)
-                }
-            }
-        }
 }
 
 

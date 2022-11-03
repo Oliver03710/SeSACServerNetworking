@@ -14,7 +14,6 @@ class CustomTextField: UITextField {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureUI()
-        setConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -25,19 +24,19 @@ class CustomTextField: UITextField {
         self.init()
         self.placeholder = placeholder
         self.font = .systemFont(ofSize: fontSize)
-        self.backgroundColor = .white
-        self.clipsToBounds = true
-        self.layer.cornerRadius = 8
-        self.textAlignment = .center
-        self.borderStyle = .bezel
-        self.autocapitalizationType = .none
-        self.autocorrectionType = .no
     }
+    
     
     // MARK: - Helper Functions
     
-    func configureUI() { }
-
-    func setConstraints() { }
+    func configureUI() {
+        backgroundColor = .white
+        clipsToBounds = true
+        layer.cornerRadius = 8
+        textAlignment = .center
+        borderStyle = .bezel
+        autocapitalizationType = .none
+        autocorrectionType = .no
+    }
 
 }
