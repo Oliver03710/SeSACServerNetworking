@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 
 enum SeSACError: Int, Error {
+    case loginFailed = 400
     case invalidAuthorization = 401
     case emailTaken = 406
     case internalError = 500
@@ -20,6 +21,8 @@ extension SeSACError: LocalizedError {
     
     var errorDescription: String? {
         switch self {
+        case .loginFailed:
+            return UserDefaultsManager.loginFailed
         case .invalidAuthorization:
             return UserDefaultsManager.invalidAutho
         case .emailTaken:
