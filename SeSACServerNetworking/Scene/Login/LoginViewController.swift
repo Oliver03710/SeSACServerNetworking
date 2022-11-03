@@ -10,6 +10,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 import SnapKit
+import Toast
 
 final class LoginViewController: BaseViewController {
 
@@ -107,20 +108,22 @@ final class LoginViewController: BaseViewController {
             }
             .disposed(by: disposeBag)
         
-//        output.tap
-//            .withUnretained(self)
-//            .bind { (vc, _) in
-//                SeSACManager.shared.request(router: vc.viewModel.api) { [weak self] str in
-//                    if str.uppercased() == "OK" {
-//                        let vc = LoginViewController()
-//                        vc.modalPresentationStyle = .overFullScreen
-//                        self?.present(vc, animated: true)
-//                    }
-//                } failure: { error in
-//                    print(error)
-//                }
-//            }
-//            .disposed(by: disposeBag)
+        output.tap
+            .withUnretained(self)
+            .flatMapLatest { (vc, _) in
+                return SeSACManager.shared.request(Login.self, router: vc.viewModel.api)
+                }
+            .subscribe { data in
+                UserDefaultsManager.token = data.token
+                guard UserDefaultsManager.token != nil else { return }
+                let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+                let sceneDelegate = windowScene?.delegate as? SceneDelegate
+                let vc = ProfileViewController()
+                sceneDelegate?.window?.rootViewController = vc
+                sceneDelegate?.window?.makeKeyAndVisible()
+            } onError: { [weak self] error in
+                self?.view.makeToast(error.localizedDescription)
+            }
+            .disposed(by: disposeBag)
     }
-
 }
