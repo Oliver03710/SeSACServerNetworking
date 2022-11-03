@@ -94,6 +94,9 @@ struct UserDefaultsManager {
     @UserDefaultsWrapper(key: "emptyParameters", defaultValue: "요청이 잘못되었습니다.")
     static var emptyParameters: String
     
+    @UserDefaultsWrapper(key: "loginFailed", defaultValue: "이메일 또는 비밀번호가 잘못되었습니다.")
+    static var loginFailed: String
+    
     
     static func removeAll() {
         if let appDomain = Bundle.main.bundleIdentifier {
