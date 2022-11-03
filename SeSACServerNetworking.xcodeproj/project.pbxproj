@@ -11,6 +11,8 @@
 		AD2F7AF22912D98F00017F3F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AD2F7AF12912D98F00017F3F /* SnapKit */; };
 		AD2F7AF42912E06100017F3F /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F7AF32912E06100017F3F /* SignupViewModel.swift */; };
 		AD2F7AF72912E0D200017F3F /* CommonViewModel+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F7AF62912E0D200017F3F /* CommonViewModel+Protocol.swift */; };
+		AD34B5ED29140EA10029938D /* UserDefaults+Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD34B5EC29140EA10029938D /* UserDefaults+Wrapper.swift */; };
+		AD34B5F0291422510029938D /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = AD34B5EF291422510029938D /* Toast */; };
 		ADC473BB2913B9430035FECD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC473BA2913B9430035FECD /* LoginViewModel.swift */; };
 		ADFC23DF2912515100D16AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23DE2912515100D16AB4 /* AppDelegate.swift */; };
 		ADFC23E12912515100D16AB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23E02912515100D16AB4 /* SceneDelegate.swift */; };
@@ -29,13 +31,13 @@
 		ADFC2416291261EE00D16AB4 /* NetworkingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC2415291261EE00D16AB4 /* NetworkingModel.swift */; };
 		ADFC2418291263A900D16AB4 /* SeSACManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC2417291263A900D16AB4 /* SeSACManager.swift */; };
 		ADFC241D29126A5500D16AB4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ADFC241C29126A5500D16AB4 /* Alamofire */; };
-		ADFC242029126B6700D16AB4 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC241F29126B6700D16AB4 /* UserDefaultsHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD2F7AED2912D30100017F3F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AD2F7AF32912E06100017F3F /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		AD2F7AF62912E0D200017F3F /* CommonViewModel+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommonViewModel+Protocol.swift"; sourceTree = "<group>"; };
+		AD34B5EC29140EA10029938D /* UserDefaults+Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Wrapper.swift"; sourceTree = "<group>"; };
 		ADC473BA2913B9430035FECD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ADFC23DB2912515100D16AB4 /* SeSACServerNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACServerNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFC23DE2912515100D16AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +55,6 @@
 		ADFC241329125D0F00D16AB4 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		ADFC2415291261EE00D16AB4 /* NetworkingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingModel.swift; sourceTree = "<group>"; };
 		ADFC2417291263A900D16AB4 /* SeSACManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACManager.swift; sourceTree = "<group>"; };
-		ADFC241F29126B6700D16AB4 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 				ADFC241D29126A5500D16AB4 /* Alamofire in Frameworks */,
 				AD2F7AF22912D98F00017F3F /* SnapKit in Frameworks */,
 				ADFC240F29125BBB00D16AB4 /* RxSwift in Frameworks */,
+				AD34B5F0291422510029938D /* Toast in Frameworks */,
 				ADFC240D29125BBB00D16AB4 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +87,14 @@
 				AD2F7AF62912E0D200017F3F /* CommonViewModel+Protocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AD34B5EB29140E830029938D /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				AD34B5EC29140EA10029938D /* UserDefaults+Wrapper.swift */,
+			);
+			path = PropertyWrapper;
 			sourceTree = "<group>";
 		};
 		ADFC23D22912515100D16AB4 = {
@@ -122,7 +132,6 @@
 		ADFC23F22912517000D16AB4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				ADFC241E29126B5700D16AB4 /* Helpers */,
 				ADFC23F32912519400D16AB4 /* BaseComponents */,
 				AD2F7AEF2912D30500017F3F /* CustomComponents */,
 				ADFC23FB2912534C00D16AB4 /* Networking */,
@@ -179,6 +188,7 @@
 		ADFC23FA2912533E00D16AB4 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				AD34B5EB29140E830029938D /* PropertyWrapper */,
 				AD2F7AF52912E0BA00017F3F /* Protocols */,
 			);
 			path = Constant;
@@ -192,14 +202,6 @@
 				ADFC2417291263A900D16AB4 /* SeSACManager.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		ADFC241E29126B5700D16AB4 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				ADFC241F29126B6700D16AB4 /* UserDefaultsHelper.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +225,7 @@
 				ADFC240E29125BBB00D16AB4 /* RxSwift */,
 				ADFC241C29126A5500D16AB4 /* Alamofire */,
 				AD2F7AF12912D98F00017F3F /* SnapKit */,
+				AD34B5EF291422510029938D /* Toast */,
 			);
 			productName = SeSACServerNetworking;
 			productReference = ADFC23DB2912515100D16AB4 /* SeSACServerNetworking.app */;
@@ -256,6 +259,7 @@
 				ADFC240B29125BBB00D16AB4 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				ADFC241B29126A5500D16AB4 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				AD2F7AF02912D98F00017F3F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				AD34B5EE291422510029938D /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = ADFC23DC2912515100D16AB4 /* Products */;
 			projectDirPath = "";
@@ -289,12 +293,12 @@
 				ADFC24072912584700D16AB4 /* ProfileView.swift in Sources */,
 				ADFC23E32912515100D16AB4 /* BaseViewController.swift in Sources */,
 				ADFC23DF2912515100D16AB4 /* AppDelegate.swift in Sources */,
+				AD34B5ED29140EA10029938D /* UserDefaults+Wrapper.swift in Sources */,
 				AD2F7AEE2912D30100017F3F /* CustomTextField.swift in Sources */,
 				ADFC2418291263A900D16AB4 /* SeSACManager.swift in Sources */,
 				ADFC23FD2912537400D16AB4 /* SignupViewController.swift in Sources */,
 				ADFC2416291261EE00D16AB4 /* NetworkingModel.swift in Sources */,
 				ADC473BB2913B9430035FECD /* LoginViewModel.swift in Sources */,
-				ADFC242029126B6700D16AB4 /* UserDefaultsHelper.swift in Sources */,
 				AD2F7AF72912E0D200017F3F /* CommonViewModel+Protocol.swift in Sources */,
 				ADFC2401291253D700D16AB4 /* ProfileViewController.swift in Sources */,
 				ADFC23E12912515100D16AB4 /* SceneDelegate.swift in Sources */,
@@ -533,6 +537,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		AD34B5EE291422510029938D /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		ADFC240B29125BBB00D16AB4 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -556,6 +568,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AD2F7AF02912D98F00017F3F /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		AD34B5EF291422510029938D /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD34B5EE291422510029938D /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 		ADFC240C29125BBB00D16AB4 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
