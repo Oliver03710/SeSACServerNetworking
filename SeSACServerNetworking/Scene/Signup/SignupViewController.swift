@@ -121,19 +121,19 @@ final class SignupViewController: BaseViewController {
         
         output.tap
             .withUnretained(self)
-            .bind { (vc, _) in
-                SeSACManager.shared.request(router: vc.viewModel.api) { [weak self] str in
-                    if str.uppercased() == "OK" {
-                        let vc = LoginViewController()
-                        vc.modalPresentationStyle = .overFullScreen
-                        self?.present(vc, animated: true)
-                    }
-                } failure: { error in
-                    print(error)
+            .flatMapLatest { (vc, _) in
+                return SeSACManager.shared.request(router: vc.viewModel.api)
                 }
+            .withUnretained(self)
+            .subscribe { (vcs, data) in
+                if data.uppercased() == "OK" {
+                    let vc = LoginViewController()
+                    vc.modalPresentationStyle = .overFullScreen
+                    vcs.present(vc, animated: true)
+                }
+            } onError: { error in
+                print(error)
             }
             .disposed(by: disposeBag)
-        
     }
-
 }
