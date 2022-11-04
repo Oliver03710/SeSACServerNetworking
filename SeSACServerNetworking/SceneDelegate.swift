@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: scene)
         
-        let vc = UserDefaultsManager.token != nil ? LoginViewController() : SignupViewController()
+        let vc = UserDefaultsManager.token != "" ? ProfileViewController() : SignupViewController()
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
