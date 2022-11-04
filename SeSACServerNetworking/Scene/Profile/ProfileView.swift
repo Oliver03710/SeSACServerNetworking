@@ -101,21 +101,12 @@ final class ProfileView: BaseView {
             .drive(nameLabel.rx.text)
             .disposed(by: disposeBag)
         
-        // MARK: - 고장
         viewModel.photo
             .map { UIImage(data: $0) }
             .debug()
             .observe(on: MainScheduler.instance)
             .bind(to: profileImageView.rx.image)
             .disposed(by: disposeBag)
-        
-//            .observe(on: MainScheduler.instance)
-//            .subscribe { (vc, image) in
-//                vc.profileImageView.image = image
-//            } onError: { [weak self] error in
-//                self?.makeToast(error.localizedDescription)
-//            }
-//            .disposed(by: disposeBag)
         
         output.tap
             .withUnretained(self)
