@@ -11,7 +11,6 @@ import Alamofire
 import RxSwift
 
 final class SeSACManager {
-
     
     // MARK: - Properties
     
@@ -72,7 +71,6 @@ final class SeSACManager {
                 guard let error = SeSACError(rawValue: statusCode) else { return }
                 completion(.failure(error))
             }
-            
         }
     }
 }
