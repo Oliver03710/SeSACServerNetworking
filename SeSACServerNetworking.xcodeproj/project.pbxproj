@@ -13,6 +13,10 @@
 		AD2F7AF72912E0D200017F3F /* CommonViewModel+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F7AF62912E0D200017F3F /* CommonViewModel+Protocol.swift */; };
 		AD34B5ED29140EA10029938D /* UserDefaults+Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD34B5EC29140EA10029938D /* UserDefaults+Wrapper.swift */; };
 		AD34B5F0291422510029938D /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = AD34B5EF291422510029938D /* Toast */; };
+		AD43F26329149EA0009B29F3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD43F26229149EA0009B29F3 /* ProfileViewModel.swift */; };
+		AD43F2652914A084009B29F3 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD43F2642914A084009B29F3 /* CustomLabel.swift */; };
+		AD43F2672914AA21009B29F3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD43F2662914AA20009B29F3 /* CustomButton.swift */; };
+		AD43F2692914B53A009B29F3 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD43F2682914B53A009B29F3 /* CustomImageView.swift */; };
 		ADC473BB2913B9430035FECD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC473BA2913B9430035FECD /* LoginViewModel.swift */; };
 		ADFC23DF2912515100D16AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23DE2912515100D16AB4 /* AppDelegate.swift */; };
 		ADFC23E12912515100D16AB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC23E02912515100D16AB4 /* SceneDelegate.swift */; };
@@ -38,6 +42,10 @@
 		AD2F7AF32912E06100017F3F /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		AD2F7AF62912E0D200017F3F /* CommonViewModel+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommonViewModel+Protocol.swift"; sourceTree = "<group>"; };
 		AD34B5EC29140EA10029938D /* UserDefaults+Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Wrapper.swift"; sourceTree = "<group>"; };
+		AD43F26229149EA0009B29F3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		AD43F2642914A084009B29F3 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		AD43F2662914AA20009B29F3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		AD43F2682914B53A009B29F3 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		ADC473BA2913B9430035FECD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ADFC23DB2912515100D16AB4 /* SeSACServerNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACServerNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFC23DE2912515100D16AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				AD2F7AED2912D30100017F3F /* CustomTextField.swift */,
+				AD43F2642914A084009B29F3 /* CustomLabel.swift */,
+				AD43F2662914AA20009B29F3 /* CustomButton.swift */,
+				AD43F2682914B53A009B29F3 /* CustomImageView.swift */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -179,6 +190,7 @@
 		ADFC23F92912531D00D16AB4 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				AD43F26229149EA0009B29F3 /* ProfileViewModel.swift */,
 				ADFC2400291253D700D16AB4 /* ProfileViewController.swift */,
 				ADFC24062912584700D16AB4 /* ProfileView.swift */,
 			);
@@ -289,18 +301,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD2F7AF42912E06100017F3F /* SignupViewModel.swift in Sources */,
+				AD43F2672914AA21009B29F3 /* CustomButton.swift in Sources */,
+				AD43F2652914A084009B29F3 /* CustomLabel.swift in Sources */,
 				ADFC23FF291253B400D16AB4 /* LoginViewController.swift in Sources */,
 				ADFC24072912584700D16AB4 /* ProfileView.swift in Sources */,
 				ADFC23E32912515100D16AB4 /* BaseViewController.swift in Sources */,
 				ADFC23DF2912515100D16AB4 /* AppDelegate.swift in Sources */,
 				AD34B5ED29140EA10029938D /* UserDefaults+Wrapper.swift in Sources */,
 				AD2F7AEE2912D30100017F3F /* CustomTextField.swift in Sources */,
+				AD43F2692914B53A009B29F3 /* CustomImageView.swift in Sources */,
 				ADFC2418291263A900D16AB4 /* SeSACManager.swift in Sources */,
 				ADFC23FD2912537400D16AB4 /* SignupViewController.swift in Sources */,
 				ADFC2416291261EE00D16AB4 /* NetworkingModel.swift in Sources */,
 				ADC473BB2913B9430035FECD /* LoginViewModel.swift in Sources */,
 				AD2F7AF72912E0D200017F3F /* CommonViewModel+Protocol.swift in Sources */,
 				ADFC2401291253D700D16AB4 /* ProfileViewController.swift in Sources */,
+				AD43F26329149EA0009B29F3 /* ProfileViewModel.swift in Sources */,
 				ADFC23E12912515100D16AB4 /* SceneDelegate.swift in Sources */,
 				ADFC241429125D0F00D16AB4 /* Endpoints.swift in Sources */,
 				ADFC23F5291251F200D16AB4 /* BaseView.swift in Sources */,
