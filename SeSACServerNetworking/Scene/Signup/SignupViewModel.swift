@@ -50,7 +50,11 @@ final class SignupViewModel: CommonViewModel {
             .share()
         
         let emailValid = input.emailText.orEmpty
-            .map { $0.count > 0 && $0.contains("@") && $0.contains(".") }
+            .map { str in
+                let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+                       let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+                       return emailTest.evaluate(with: str)
+            }
             .share()
         
         let passwordValid = input.passwordText.orEmpty
