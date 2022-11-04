@@ -82,6 +82,9 @@ struct UserDefaultsManager {
     @UserDefaultsWrapper(key: "loginTitle", defaultValue: "로그인")
     static var loginTitle: String
     
+    @UserDefaultsWrapper(key: "logoutTitle", defaultValue: "로그아웃")
+    static var logoutTitle: String
+    
     @UserDefaultsWrapper(key: "invalidAutho", defaultValue: "토큰이 만료되었습니다. 다시 로그인 해주세요.")
     static var invalidAutho: String
     
