@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomTextField: UITextField {
+final class CustomTextField: UITextField {
     
     // MARK: - Init
     
@@ -20,19 +20,18 @@ class CustomTextField: UITextField {
         fatalError("init(coder:) has not been implemented")
     }
     
-    convenience init(placeholder: String, fontSize: CGFloat) {
+    convenience init(placeholder: String, fontSize: CGFloat, keyBoardType: UIKeyboardType = .default) {
         self.init()
         self.placeholder = placeholder
         self.font = .systemFont(ofSize: fontSize)
+        self.keyboardType = keyBoardType
     }
     
     
     // MARK: - Helper Functions
     
     func configureUI() {
-        backgroundColor = .white
         clipsToBounds = true
-        layer.cornerRadius = 8
         textAlignment = .center
         borderStyle = .bezel
         autocapitalizationType = .none
