@@ -30,13 +30,12 @@ final class CustomImageView: UIImageView {
     
     func configureUI() {
         contentMode = .scaleAspectFit
-        backgroundColor = .orange
+        image = UIImage(systemName: "applelogo")
     }
     
     func isFullCircle() {
         layer.cornerRadius = bounds.size.width / 2
         layer.masksToBounds = true
-        image = UIImage(systemName: "applelogo")
     }
 
 }
