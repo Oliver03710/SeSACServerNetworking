@@ -16,11 +16,8 @@ final class SignupViewController: BaseViewController {
 
     // MARK: - Properties
     
-    private let titleLabel: UILabel = {
-        let label = UILabel()
-        label.font = .boldSystemFont(ofSize: 32)
-        label.text = UserDefaultsManager.loginTitle
-        label.textAlignment = .center
+    private let titleLabel: CustomLabel = {
+        let label = CustomLabel(text: UserDefaultsManager.signupTitle, fontSize: 32)
         return label
     }()
     
@@ -30,7 +27,7 @@ final class SignupViewController: BaseViewController {
     }()
     
     private let emailTextField: CustomTextField = {
-        let tf = CustomTextField(placeholder: UserDefaultsManager.emailTextField, fontSize: 15)
+        let tf = CustomTextField(placeholder: UserDefaultsManager.emailTextField, fontSize: 15, keyBoardType: .emailAddress)
         return tf
     }()
     
@@ -40,14 +37,8 @@ final class SignupViewController: BaseViewController {
         return tf
     }()
     
-    private let signupButton: UIButton = {
-        let btn = UIButton()
-        btn.setTitle(UserDefaultsManager.loginTitle, for: .normal)
-        btn.titleLabel?.font = .boldSystemFont(ofSize: 20)
-        btn.backgroundColor = .darkGray
-        btn.clipsToBounds = true
-        btn.layer.cornerRadius = 12
-        btn.isEnabled = false
+    private let signupButton: CustomButton = {
+        let btn = CustomButton(title: UserDefaultsManager.signupTitle, fontSize: 20)
         return btn
     }()
     
@@ -122,9 +113,15 @@ final class SignupViewController: BaseViewController {
         
         output.tap
             .withUnretained(self)
-            .flatMapLatest { (vc, _) in
-                return SeSACManager.shared.request(router: vc.viewModel.api)
-                }
+            .bind { (vc, _) in
+                vc.transitionVC()
+            }
+            .disposed(by: disposeBag)
+        
+    }
+    
+    func transitionVC() {
+        SeSACManager.shared.request(router: viewModel.api)
             .subscribe { data in
                 guard data.uppercased() == UserDefaultsManager.okay else { return }
                 let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
@@ -132,7 +129,7 @@ final class SignupViewController: BaseViewController {
                 let vc = LoginViewController()
                 sceneDelegate?.window?.rootViewController = vc
                 sceneDelegate?.window?.makeKeyAndVisible()
-            } onError: { [weak self] error in
+            } onFailure: { [weak self] error in
                 self?.view.makeToast(error.localizedDescription)
             }
             .disposed(by: disposeBag)
