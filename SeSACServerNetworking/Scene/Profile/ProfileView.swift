@@ -126,7 +126,7 @@ final class ProfileView: BaseView {
             let vc = SignupViewController()
             sceneDelegate?.window?.rootViewController = vc
             sceneDelegate?.window?.makeKeyAndVisible()
-            UserDefaultsManager.token = ""
+            UserDefaultsManager.token?.removeAll()
             completable(.completed)
             return Disposables.create()
         }
